@@ -1,18 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+
 * {
-    list-style-type: none;
-    text-decoration: none;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    background-color: #fff5f8; /* fondo suave general */
+  }
+  .header {
+    width: 100vw;
+    height: 40vh;
+    background-color: blueviolet;
+  }
+  .hora-container {
+    width: 100vw;
+    height: 20vh;
+    background-color: rgb(158, 100, 212);
+  }
+  .acompañame {
+    width: 100vw;
+    height: 40vh;
+    background-color: rgb(140, 39, 235);
+  }
+  .cuenta-regresiva {
+    width: 100vw;
+    height: 40vh;
+    background-color: rgb(107, 69, 143);
+  }
+.lugar {
+  width: 100vw;
+  height: 40vh;
+  background-color: rgb(87, 189, 100);
 }
-body {
-    width: 100%;
+.vestimenta {
+  width: 100vw;
+  height: 20vh;
+  background-color: rgb(87, 143, 189);
 }
-.header {
-    width: 100%;
-height: 50%;
-    background-color: rgb(245, 204, 191);
+.lugar {
+  width: 100vw;
+  height: 40vh;
+  background-color: rgb(87, 189, 100);
+}
+.regalo {
+  width: 100vw;
+  height: 40vh;
+  background-color: rgb(87, 94, 189);
+}
+.confirmacion {
+  width: 100vw;
+  height: 40vh;
+  background-color: rgb(133, 189, 87);
+}
+.despedida {
+  width: 100vw;
+  height: 40vh;
+  background-color: rgb(87, 94, 189);
 }
 
-.img-flores {
-    width: 100%;
-}
+
+
+
+  /* .header {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #fff5f8; 
+    background-image: url('../img/flores2.png');
+    background-size: 100% 100%; 
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.nombre {
+  font-family: "Caveat", cursive;
+  font-size: clamp(2rem, 8vw, 4rem);
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+} */
+
+
