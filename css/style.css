@@ -13,10 +13,10 @@
   .header {
     position: relative;
     width: 100vw;
-    height: 100vh;
+    aspect-ratio: 1 / 1;
     overflow: hidden;
     background-color: #fff5f8; 
-    background-image: url('../img/flores3.png');
+    background-image: url('../img/flores4.png');
     background-size: 100% 100%; 
     background-repeat: no-repeat;
     background-position: center;
