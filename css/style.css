@@ -12,52 +12,52 @@
   }
   .header {
     width: 100vw;
-    height: 50%;
+    height: 40vh;
     background-color: blueviolet;
   }
   .hora-container {
     width: 100vw;
-    height: 20%;
+    height: 20vh;
     background-color: rgb(158, 100, 212);
   }
   .acompañame {
     width: 100vw;
-    height: 40%;
+    height: 40vh;
     background-color: rgb(140, 39, 235);
   }
   .cuenta-regresiva {
     width: 100vw;
-    height: 40%;
+    height: 40vh;
     background-color: rgb(107, 69, 143);
   }
 .lugar {
   width: 100vw;
-  height: 40%;
+  height: 40vh;
   background-color: rgb(87, 189, 100);
 }
 .vestimenta {
   width: 100vw;
-  height: 20%;
+  height: 20vh;
   background-color: rgb(87, 143, 189);
 }
 .lugar {
   width: 100vw;
-  height: 40%;
+  height: 40vh;
   background-color: rgb(87, 189, 100);
 }
 .regalo {
   width: 100vw;
-  height: 40%;
+  height: 40vh;
   background-color: rgb(87, 94, 189);
 }
 .confirmacion {
   width: 100vw;
-  height: 40%;
+  height: 40vh;
   background-color: rgb(133, 189, 87);
 }
 .despedida {
   width: 100vw;
-  height: 40%;
+  height: 40vh;
   background-color: rgb(87, 94, 189);
 }
 
