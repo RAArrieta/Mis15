@@ -257,17 +257,30 @@ button:hover {
 
 .vestimenta {
   width: 100vw;
-  height: 20vh;
-  background-color: rgb(87, 143, 189);
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 
 
 .confirmacion {
   width: 100vw;
-  height: 40vh;
-  background-color: rgb(133, 189, 87);
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
+
+
+
+
+
+
 .despedida {
   width: 100vw;
   height: 20vh;
