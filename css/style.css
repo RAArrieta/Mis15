@@ -24,16 +24,51 @@
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
   .nombre {
-    font-family: "Caveat", cursive;
-    font-size: clamp(2rem, 8vw, 4rem);
-    color: white;
     text-align: center;
+    color: white;
+    font-family: "Caveat", cursive;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
   }
+  
+  .nombre-guada {
+    color: #1e3a5f;
+    display: block;
+    font-size: clamp(4rem, 12vw, 7rem);
+    font-weight: 700;
+    color: #1e3a5f;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4), 0 0 8px rgba(30, 58, 95, 0.4);
+    animation: aparecer 1.5s ease-out;
+  }
+  
+  .nombre-15 {
+    color: #3b5998; 
+    display: block;
+    font-size: clamp(2rem, 7vw, 4rem);
+    font-weight: 400;
+    margin-top: 0.5rem;
+    animation: aparecer 2s ease-out 0.5s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
+  
+  /* Animación suave */
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+      transform: translateY(20px) scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+  
+
 
 
 /* TEXTO GENERAL */
@@ -66,9 +101,13 @@
   }
 
 
+
+
+
+
   .container-play {
     width: 100vw;
-    height: 20vh;
+    /* height: 10vh; */
 
     display: flex;
     flex-direction: column;
@@ -80,7 +119,7 @@
 
 
 .cont-play {
-  width: 30%;
+  width: 35%;
 
   cursor: pointer; 
   color:  rgb(146, 72, 19); 
@@ -120,7 +159,7 @@
 /* FECHA */
   .fecha-container {
     width: 100vw;
-    height: 35vh;
+    /* height: 35vh; */
 
     display: flex;
     flex-direction: column;
@@ -143,7 +182,8 @@
 /* TEXTO DE INVITACION */
   .acompañame {
     width: 100vw;
-    height: 40vh;
+    /* height: 55vh; */
+    margin-top: 10px;
     padding: 0 20px;
     display: flex;
     flex-direction: column;
@@ -155,7 +195,9 @@
 /* CUENTA REGRESIVA */
   .cuenta-regresiva {
     width: 100vw;
-    height: 60vh;
+    /* height: 60vh; */
+    margin: 35px 0;
+    padding: 0 15px;
 
     font-family: "Josefin Sans", sans-serif;
     font-optical-sizing: auto;
@@ -177,14 +219,57 @@
 
 
 /* UBICACION DEL SALON */
-.lugar {
-  width: 100vw;
-  height: 40vh;
+.contenedor-lugar {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+/* .lugar {
+  width: 90vw;
+  height: 40vh;
+  padding-bottom: 20px;
+  border: 1px solid #1e3a5f;
+  border-radius: 20vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} */
+
+.lugar {
+  width: 90vw;
+  height: 40vh;
+  position: relative;
+  border: 1px solid #1e3a5f;
+  border-radius: 20vh;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  background:  #fff5f8; /* o el color del interior */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.lugar::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  z-index: -1;
+  border-radius: 20vh;
+  background: linear-gradient(135deg, #1e3a5f, #3b5998, #6ca0dc);
+}
+
+
+
+
+
+
 button {
   margin-top: 20px;
   padding: 10px 20px;
@@ -217,7 +302,7 @@ button:hover {
 
 .imagenes {
   width: 100vw;
-
+  margin-bottom: 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -230,13 +315,13 @@ button:hover {
   border-radius: 12px;     /* esquinas redondeadas */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* sombra suave */
   padding: 20px;
-
+  
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
   gap: 10px;
-  background-color: #fafafa; /* fondo muy clarito */
+  background-color: #fff5f8;
 }
 .est-foto {
   border-radius: 10px;
@@ -339,7 +424,7 @@ button:hover {
 
 .vestimenta {
   width: 100vw;
-  height: 50vh;
+  /* height: 50vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -350,7 +435,8 @@ button:hover {
 
 .confirmacion {
   width: 100vw;
-  height: 80vh;
+  /* height: 80vh; */
+  margin-bottom: 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -365,7 +451,7 @@ button:hover {
 
 .despedida {
   width: 100vw;
-  height: 20vh;
+  /* height: 50vh; */
   display: flex;
   flex-direction: column;
   align-items: center;

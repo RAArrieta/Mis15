@@ -17,12 +17,11 @@
 </head>
 <body>
     <header class="header">
-        <h1 class="nombre">Guadalupe</h1>
-        <h1 class="nombre">Mis 15</h1>
+        <div class="nombre">
+          <span class="nombre-guada">Guadalupe</span><br>
+          <span class="nombre-15">Mis 15</span>
+        </div>
     </header>
-
-
-
 
     <div class="container-play">
         <audio id="miCancion" src="cancion/tema.mp3"></audio>
@@ -66,22 +65,24 @@
 
 
 
-
-    <div class="lugar">
-        <h1 class="titulo">La Fiesta</h1>
-        <br>
-        <p class="texto">Los Arcos</p>
-        <br>
-        <p class="texto2">Octavio Pinto 3296,</p>
-        <p class="texto2">Altos de Villa Cabrera.</p>
-        <button onclick="abrirMaps()">Ver Mapa</button>
+    <div class="contenedor-lugar">
+        <div class="lugar">
+            <h1 class="titulo">La Fiesta</h1>
+            <br>
+            <p class="texto">Los Arcos</p>
+            <br>
+            <p class="texto2">Octavio Pinto 3296,</p>
+            <p class="texto2">Altos de Villa Cabrera.</p>
+            <button onclick="abrirMaps()">Ver Mapa</button>
+        </div>
     </div>
 
 
-    <div class="imagenes" id="fotos">
-        <img class="sep-sup" src="img/separador.png" alt="Separador">
-        <h1 class="titulo">Mis momentos</h1>
 
+    <div class="imagenes" id="fotos">
+        <!-- <img class="sep-sup" src="img/separador.png" alt="Separador"> -->
+        <h1 class="titulo">Mis momentos</h1>
+        <img class="sep-inf" src="img/separador.png" alt="Separador">
         <div class="fotos" >
             <a href="#img1"><img class="est-foto" src="img/foto1.jpeg" alt="Foto 1"></a>
             <a href="#img2"><img class="est-foto" src="img/foto2.jpeg" alt="Foto 2"></a>
@@ -92,7 +93,7 @@
             <a href="#img7"><img class="est-foto" src="img/foto7.jpeg" alt="Foto 7"></a>
             <a href="#img8"><img class="est-foto" src="img/foto8.jpeg" alt="Foto 8"></a>
         </div>
-        <img class="sep-inf" src="img/separador.png" alt="Separador">
+        <!-- <img class="sep-inf" src="img/separador.png" alt="Separador"> -->
     </div>
     
     <div class="lightbox" id="img1">
@@ -142,11 +143,13 @@
 
 
     <div class="vestimenta">
+        <img class="sep-sup" src="img/separador sup.png" alt="Separador superior">
         <h1 class="titulo">Dress Code</h1>
         <br>
         <p class="texto">Elegante Sport</p>
         <br>
         <p class="texto">El color azul queda reservado para la quinceañera.</p>
+        <img class="sep-inf" src="img/separador inf.png" alt="Separador inferior">
     </div>
 
 
@@ -154,7 +157,9 @@
 
 
     <div class="confirmacion">
-        <h1 class="titulo">Confirma tu asistencia</h1>
+        <!-- <img class="sep-sup" src="img/separador.png" alt="Separador"> -->
+
+        <h1 class="titulo">Confirma</h1>
         <br>
         <p class="texto">Para mi es muy importante que confirmes esta invitación, o que me cuentes si no me podes acompañar.</p>
         <br>
@@ -168,10 +173,15 @@
         <a href="https://wa.me/5493518074900" target="_blank">
             <button>Comentame</button>
         </a>
+        <!-- <img class="sep-inf" src="img/separador.png" alt="Separador"> -->
     </div>
+
+
+
     <div class="despedida">
+        <img class="sep-sup" src="img/separador sup.png" alt="Separador superior">
         <h1 class="titulo">Te espero</h1>
-        
+        <img class="sep-sup" src="img/separador sup.png" alt="Separador superior">
     </div>
 
     <script>
