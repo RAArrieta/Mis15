@@ -46,7 +46,13 @@
     color:rgb(146, 72, 19);
     text-align: center;
     font-size: 30px;
-    
+  }
+  .titulo {
+    font-family: "Caveat", cursive;
+
+    color:rgb(146, 72, 19);
+    text-align: center;
+    font-size: 70px;
   }
 
 
@@ -79,6 +85,7 @@
   .acompañame {
     width: 100vw;
     height: 40vh;
+    padding: 0 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -89,25 +96,35 @@
 /* CUENTA REGRESIVA */
   .cuenta-regresiva {
     width: 100vw;
-    height: 40vh;
+    height: 60vh;
 
-    font-size: 50px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 25px;
+    font-style: normal;
+
+    color:rgb(146, 72, 19);
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  .sep-sup {
-    width: 70%;
+
+  .countdown {
+    font-size: 50px;
+
   }
+  /* .sep-sup {
+    width: 70%;
+  } */
   /* .texto-fecha {
     font-size: 50px;
   } */
-  .sep-inf {
+  /* .sep-inf {
     width: 70%;
     transform: scaleY(-1);
-  }
+  } */
 
 
 
