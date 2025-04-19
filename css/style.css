@@ -66,6 +66,55 @@
   }
 
 
+  .container-play {
+    width: 100vw;
+    height: 20vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+
+.cont-play {
+  width: 30%;
+
+  cursor: pointer; 
+  color:  rgb(146, 72, 19); 
+  font-weight: bold;
+  background: rgb(240, 161, 105); 
+  padding: 10px 20px; 
+  border-radius: 8px; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.play {
+  width: 40px;
+  height: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* FECHA */
