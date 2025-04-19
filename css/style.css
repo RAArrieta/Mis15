@@ -8,14 +8,17 @@
   
   html, body {
     height: 100%;
-    background-color: #fff5f8; /* fondo suave general */
+    background-color: #fff5f8; 
+    /* background-color: #fff5cd;  */
   }
+
+  /* ENCABEZADO */
   .header {
     position: relative;
     width: 100vw;
     aspect-ratio: 1 / 1;
     overflow: hidden;
-    background-color: #fff5f8; 
+
     background-image: url('../img/flores4.png');
     background-size: 100% 100%; 
     background-repeat: no-repeat;
@@ -31,21 +34,87 @@
     text-align: center;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
   }
-  .hora-container {
-    width: 100vw;
-    height: 20vh;
-    background-color: rgb(158, 100, 212);
+
+
+/* TEXTO GENERAL */
+  .texto {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 25px;
+    font-style: normal;
+
+    color:rgb(146, 72, 19);
+    text-align: center;
+    font-size: 30px;
+    
   }
+
+
+
+
+/* FECHA */
+  .fecha-container {
+    width: 100vw;
+    height: 35vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .sep-sup {
+    width: 70%;
+  }
+  .texto-fecha {
+    font-size: 50px;
+  }
+  .sep-inf {
+    width: 70%;
+    transform: scaleY(-1);
+  }
+
+
+
+/* TEXTO DE INVITACION */
   .acompañame {
     width: 100vw;
     height: 40vh;
-    background-color: rgb(140, 39, 235);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
+
+
+/* CUENTA REGRESIVA */
   .cuenta-regresiva {
     width: 100vw;
     height: 40vh;
-    background-color: rgb(107, 69, 143);
+
+    font-size: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
+  .sep-sup {
+    width: 70%;
+  }
+  /* .texto-fecha {
+    font-size: 50px;
+  } */
+  .sep-inf {
+    width: 70%;
+    transform: scaleY(-1);
+  }
+
+
+
+
+
+
+
 .lugar {
   width: 100vw;
   height: 40vh;

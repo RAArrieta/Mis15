@@ -8,7 +8,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">    
     
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
     <title>Mis 15</title>
 </head>
@@ -17,40 +20,81 @@
         <h1 class="nombre">Guadalupe</h1>
         <h1 class="nombre">Mis 15</h1>
     </header>
-    <div class="hora-container" >
-        <p>28-06-2025</p>
+
+    <div class="fecha-container" >
+        <img class="sep-sup" src="img/separador.png" alt="Separador">
+        <p class="texto texto-fecha">28-06-2025</p>
+        <img class="sep-inf" src="img/separador.png" alt="Separador">
     </div>
+
     <div class="acompañame">
-        <p>Las cosas mas bonitas de la vida siempre son mejores si las compartes con las personas que amas, por eso quiero que seas parte de este día tan especial para mi, acomañame a festejar mis 15 años y sigue siendo parte de mi historia.</p>
+        <p class="texto">Las cosas mas bonitas de la vida siempre son mejores si las compartes con las personas que amas, por eso quiero que seas parte de este día tan especial para mi, acomañame a festejar mis 15 años y sigue siendo parte de mi historia.</p>
     </div>
+
+
+
+
     <div class="cuenta-regresiva">
-        <p>faltan</p>
+        <img class="sep-sup" src="img/separador sup.png" alt="Separador superior">
+        <p class="texto">Faltan</p>
+        <div class="countdown texto" id="cuenta"></div>
+        <img class="sep-sup" src="img/separador inf.png" alt="Separador inferior">
     </div>
+
+
+
+
+
     <div class="lugar">
-        <h1>Fiesta</h1>
-        <p>Los Arcos</p>
-        <p>Boton ver mapa</p>
+        <h1 class="texto">Fiesta</h1>
+        <p class="texto">Los Arcos</p>
+        <p class="texto">Boton ver mapa</p>
     </div>
     <div class="vestimenta">
-        <h1>Dress Code</h1>
-        <p>Elegante Sport</p>
-        <p>El color azul queda reservado para la quinceañera.</p>
+        <h1 class="texto">Dress Code</h1>
+        <p class="texto">Elegante Sport</p>
+        <p class="texto">El color azul queda reservado para la quinceañera.</p>
     </div>
     <div class="regalo">
-        <h1>Regalo</h1>
-        <p>Mi mejor regalo, en este día tan especial es tu presencia pero si deseas obsequiarme algo...</p>
-        <p>podes ponerlo en un sobre</p>
+        <h1 class="texto">Regalo</h1>
+        <p class="texto">Mi mejor regalo, en este día tan especial es tu presencia pero si deseas obsequiarme algo...</p>
+        <p class="texto">podes ponerlo en un sobre</p>
     </div>
     <div class="confirmacion">
-        <h1>Confirma tu asistencia</h1>
-        <p>Para mi es muy importante que confirmes esta invitación, o que me cuentes si no me podes acompañar.</p>
-        <p>boton confirmar</p>
-        <p>Contame si tenes una restriccion alimentaria, celiaca, diabetes, vegetariano, vegano u otro.</p>
-        <p>boton contame</p>
+        <h1 class="texto">Confirma tu asistencia</h1>
+        <p class="texto">Para mi es muy importante que confirmes esta invitación, o que me cuentes si no me podes acompañar.</p>
+        <p class="texto">boton confirmar</p>
+        <p class="texto">Contame si tenes una restriccion alimentaria, celiaca, diabetes, vegetariano, vegano u otro.</p>
+        <p class="texto">boton contame</p>
     </div>
     <div class="despedida">
-        <h1>Te espero</h1>
+        <h1 class="texto">Te espero</h1>
         
     </div>
+
+    <script>
+        // Fecha objetivo: 28 de junio a las 21:30 hs (hora local)
+        const fechaObjetivo = new Date("June 28, 2025 21:30:00").getTime();
+    
+        const cuenta = document.getElementById("cuenta");
+    
+        const intervalo = setInterval(() => {
+          const ahora = new Date().getTime();
+          const diferencia = fechaObjetivo - ahora;
+    
+          if (diferencia <= 0) {
+            clearInterval(intervalo);
+            cuenta.innerHTML = "¡Llegó la hora!";
+            return;
+          }
+    
+          const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+          const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
+          const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
+    
+          cuenta.innerHTML = `${dias}d ${horas}h ${minutos}m ${segundos}s`;
+        }, 1000);
+    </script>
 </body>
 </html>
