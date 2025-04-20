@@ -23,7 +23,7 @@
         </div>
     </header>
 
-    <div class="container-play">
+    <!-- <div class="container-play">
         <audio id="miCancion" src="cancion/tema.mp3"></audio>
 
         <div onclick="document.getElementById('miCancion').play();" class="cont-play">
@@ -31,9 +31,16 @@
             <p>PLAY</p>
         </div>
 
+    </div> -->
+
+    <div class="container-play">
+        <audio id="miCancion" src="cancion/tema.mp3"></audio>
+    
+        <div onclick="togglePlay()" id="btnPlay" class="cont-play">
+            <img class="play" id="iconoPlay" src="img/btn-play.png" alt="Play">
+            <p id="textoPlay">PLAY</p>
+        </div>
     </div>
-
-
 
 
 
@@ -215,6 +222,21 @@
             // Reemplazá esto con la ubicación que quieras
             const url = "https://www.google.com/maps/place/Los+Arcos/@-31.383352,-64.2220878,18.75z/data=!4m6!3m5!1s0x943298dea2bc9739:0xe074fefb7e820bbf!8m2!3d-31.3831049!4d-64.2224556!16s%2Fg%2F1tmbx658?entry=ttu&g_ep=EgoyMDI1MDQxNi4xIKXMDSoASAFQAw%3D%3D"; // Córdoba, Argentina
             window.open(url, "_blank");
+    }
+    const audio = document.getElementById('miCancion');
+    const textoPlay = document.getElementById('textoPlay');
+    const iconoPlay = document.getElementById('iconoPlay');
+
+    function togglePlay() {
+        if (audio.paused) {
+        audio.play();
+        textoPlay.textContent = "PAUSA";
+        iconoPlay.src = "img/btn-pausa.png"; 
+        } else {
+        audio.pause();
+        textoPlay.textContent = "PLAY";
+        iconoPlay.src = "img/btn-play.png";
+        }
     }
     </script>
 </body>
