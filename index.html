@@ -16,6 +16,7 @@
     <title>Mis 15</title>
 </head>
 <body>
+    <!-- ENCABEZADO -->
     <header class="header">
         <div class="nombre">
           <span class="nombre-guada">Guadalupe</span><br>
@@ -23,16 +24,7 @@
         </div>
     </header>
 
-    <!-- <div class="container-play">
-        <audio id="miCancion" src="cancion/tema.mp3"></audio>
-
-        <div onclick="document.getElementById('miCancion').play();" class="cont-play">
-            <img class="play" src="img/btn-play.png" alt="Play">
-            <p>PLAY</p>
-        </div>
-
-    </div> -->
-
+    <!-- PLAY MUSICA -->
     <div class="container-play">
         <audio id="miCancion" src="cancion/tema.mp3"></audio>
     
@@ -42,55 +34,41 @@
         </div>
     </div>
 
-
-
-
-
-
-
+    <!-- FECHA -->
     <div class="fecha-container" >
         <img class="sep-sup" src="img/separador.png" alt="Separador">
         <p class="texto texto-fecha">28-06-2025</p>
         <img class="sep-inf" src="img/separador.png" alt="Separador">
     </div>
 
+    <!-- TEXTO INVITACION -->
     <div class="acompañame">
         <p class="texto">Las cosas mas bonitas de la vida siempre son mejores si las compartes con las personas que amas, por eso quiero que seas parte de este día tan especial para mi, acomañame a festejar mis 15 años y sigue siendo parte de mi historia.</p>
     </div>
 
-
-
-
+    <!-- CUENTA REGRESIVA -->
     <div class="cuenta-regresiva">
         <img class="sep-sup" src="img/separador sup.png" alt="Separador superior">
-        <p class="titulo">Faltan</p>
-        <br>
+        <h1 class="titulo">Faltan ...</h1><br><br>
         <div class="countdown" id="cuenta"></div>
-        <!-- <img class="sep-inf" src="img/separador inf.png" alt="Separador inferior"> -->
-        <br>
     </div>
 
-
-
-
+    <!-- UBICACION DEL SALON -->
     <div class="contenedor-lugar">
         <img class="sep-sup" src="img/separador sup.png" alt="Separador superior">
         <div class="lugar">
-            <h1 class="titulo">La Fiesta</h1>
-            <br>
-            <p class="texto">Los Arcos</p>
-            <br>
-            <p class="texto2">Octavio Pinto 3296,</p>
-            <p class="texto2">Altos de Villa Cabrera.</p>
+            <h1 class="titulo">La Fiesta</h1><br>
+            <p class="texto">Los Arcos</p><br>
+            <p class="texto-dire">Octavio Pinto 3296,</p>
+            <p class="texto-dire">Altos de Villa Cabrera.</p>
             <button onclick="abrirMaps()">Ver Mapa</button>
         </div>
     </div>
 
-
-
+    <!-- FOTOS -->
     <div class="imagenes" id="fotos">
         <img class="sep-sup" src="img/separador sup.png" alt="Separador superior">
-        <h1 class="titulo">Mis momentos</h1>
+        <h1 class="titulo">Mis Momentos</h1><br>
         <div class="fotos" >
             <a class="cont-img" href="#img1"><img class="est-foto" src="img/foto1.jpeg" alt="Foto 1"></a>
             <a class="cont-img" href="#img2"><img class="est-foto" src="img/foto2.jpeg" alt="Foto 2"></a>
@@ -103,160 +81,83 @@
         </div>
     </div>
     <div class="lightbox" id="img1">
-        <a href="#img8" class="nav prev">&#10094;</a> <!-- anterior -->
-        <a href="#img2" class="nav next">&#10095;</a> <!-- siguiente -->
+        <a href="#img8" class="nav prev">&#10094;</a> 
+        <a href="#img2" class="nav next">&#10095;</a> 
         <a href="#fotos" class="close">&times;</a>
         <img src="img/foto1.jpeg" alt="Foto 1 grande">
     </div>
-    <!-- <div class="lightbox" id="img1">
-        <a href="#fotos" class="close">&times;</a>
-        <img src="img/foto1.jpeg" alt="Foto 1 grande">
-    </div> -->
-
     <div class="lightbox" id="img2">
-        <a href="#img1" class="nav prev">&#10094;</a> <!-- anterior -->
-        <a href="#img3" class="nav next">&#10095;</a> <!-- siguiente -->
+        <a href="#img1" class="nav prev">&#10094;</a> 
+        <a href="#img3" class="nav next">&#10095;</a> 
         <a href="#fotos" class="close">&times;</a>
         <img src="img/foto2.jpeg" alt="Foto 2 grande">
     </div>
     <div class="lightbox" id="img3">
-        <a href="#img2" class="nav prev">&#10094;</a> <!-- anterior -->
-        <a href="#img4" class="nav next">&#10095;</a> <!-- siguiente -->
+        <a href="#img2" class="nav prev">&#10094;</a> 
+        <a href="#img4" class="nav next">&#10095;</a> 
         <a href="#fotos" class="close">&times;</a>
         <img src="img/foto3.jpeg" alt="Foto 3 grande">
     </div>
     <div class="lightbox" id="img4">
-        <a href="#img3" class="nav prev">&#10094;</a> <!-- anterior -->
-        <a href="#img5" class="nav next">&#10095;</a> <!-- siguiente -->
+        <a href="#img3" class="nav prev">&#10094;</a> 
+        <a href="#img5" class="nav next">&#10095;</a> 
         <a href="#fotos" class="close">&times;</a>
         <img src="img/foto4.jpeg" alt="Foto 4 grande">
     </div>
     <div class="lightbox" id="img5">
-        <a href="#img4" class="nav prev">&#10094;</a> <!-- anterior -->
-        <a href="#img6" class="nav next">&#10095;</a> <!-- siguiente -->
+        <a href="#img4" class="nav prev">&#10094;</a> 
+        <a href="#img6" class="nav next">&#10095;</a> 
         <a href="#fotos" class="close">&times;</a>
         <img src="img/foto5.jpeg" alt="Foto 5 grande">
     </div>
     <div class="lightbox" id="img6">
-        <a href="#img5" class="nav prev">&#10094;</a> <!-- anterior -->
-        <a href="#img7" class="nav next">&#10095;</a> <!-- siguiente -->
+        <a href="#img5" class="nav prev">&#10094;</a> 
+        <a href="#img7" class="nav next">&#10095;</a> 
         <a href="#fotos" class="close">&times;</a>
         <img src="img/foto6.jpeg" alt="Foto 6 grande">
     </div>
     <div class="lightbox" id="img7">
-        <a href="#img6" class="nav prev">&#10094;</a> <!-- anterior -->
-        <a href="#img8" class="nav next">&#10095;</a> <!-- siguiente -->
+        <a href="#img6" class="nav prev">&#10094;</a> 
+        <a href="#img8" class="nav next">&#10095;</a> 
         <a href="#fotos" class="close">&times;</a>
         <img src="img/foto7.jpeg" alt="Foto 7 grande">
     </div>
     <div class="lightbox" id="img8">
-        <a href="#img7" class="nav prev">&#10094;</a> <!-- anterior -->
-        <a href="#img1" class="nav next">&#10095;</a> <!-- siguiente -->
+        <a href="#img7" class="nav prev">&#10094;</a> 
+        <a href="#img1" class="nav next">&#10095;</a> 
         <a href="#fotos" class="close">&times;</a>
         <img src="img/foto8.jpeg" alt="Foto 8 grande">
     </div>
-    
 
-
-
-
-
-
-
-
-
-
-
-
+    <!-- VESTIMENTA -->
     <div class="vestimenta">
         <img class="sep-sup" src="img/separador sup.png" alt="Separador superior">
-        <h1 class="titulo">Dress Code</h1>
-        <br>
-        <p class="texto">Elegante Sport</p>
-        <br>
-        <p class="texto">El color azul queda reservado para la quinceañera.</p>
-        <br>
-        <!-- <img class="sep-inf" src="img/separador inf.png" alt="Separador inferior"> -->
+        <h1 class="titulo">Dress Code</h1><br>
+        <p class="texto">Elegante Sport</p><br>
+        <p class="texto">El color azul queda reservado para la quinceañera.</p><br>
     </div>
 
-
-
-
-
+    <!-- CONFIRMACION -->
     <div class="confirmacion">
         <img class="sep-sup" src="img/separador sup.png" alt="Separador superior">
-
-        <h1 class="titulo">Me acompañas?</h1>
-        <br>
-        <p class="texto">Para mi es muy importante que confirmes esta invitación, o que me cuentes si no me podes acompañar.</p>
-        <br>
+        <h1 class="titulo">Me Acompañas?</h1><br>
+        <p class="texto">Para mi es muy importante que confirmes esta invitación, o que me cuentes si no me podes acompañar.</p><br>
         <a href="https://wa.me/5493518074900" target="_blank">
             <button>Confirma aquí</button>
-        </a>
-        <br>
-        <br>
-        <p class="texto">Contame si tenes una restriccion alimentaria, celiaca, diabetes, vegetariano, vegano u otro.</p>
-        <br>
+        </a><br><br>
+        <p class="texto">Contame si tenes una restriccion alimentaria, celiaca, diabetes, vegetariano, vegano u otro.</p><br>
         <a href="https://wa.me/5493518074900" target="_blank">
-            <button>Comentame</button>
+            <button>Comentame</button><br>
         </a>
-        <!-- <img class="sep-inf" src="img/separador.png" alt="Separador"> -->
     </div>
 
-
-
+    <!-- DESPEDIDA -->
     <div class="despedida">
         <img class="sep-sup" src="img/separador sup.png" alt="Separador superior">
-        <h1 class="titulo">Te espero!!</h1>
+        <h1 class="titulo">Te Espero!!</h1>
         <img class="sep-sup" src="img/separador sup.png" alt="Separador superior">
     </div>
 
-    <script>
-        // Fecha objetivo: 28 de junio a las 21:30 hs (hora local)
-        const fechaObjetivo = new Date("June 28, 2025 21:30:00").getTime();
-    
-        const cuenta = document.getElementById("cuenta");
-    
-        const intervalo = setInterval(() => {
-          const ahora = new Date().getTime();
-          const diferencia = fechaObjetivo - ahora;
-    
-          if (diferencia <= 0) {
-            clearInterval(intervalo);
-            cuenta.innerHTML = "¡Llegó la hora!";
-            return;
-          }
-    
-          const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
-          const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-          const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
-          const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
-    
-          cuenta.innerHTML = `${dias}d ${horas}h ${minutos}m ${segundos}s`;
-        }, 1000);
-
-
-
-        function abrirMaps() {
-            // Reemplazá esto con la ubicación que quieras
-            const url = "https://www.google.com/maps/place/Los+Arcos/@-31.383352,-64.2220878,18.75z/data=!4m6!3m5!1s0x943298dea2bc9739:0xe074fefb7e820bbf!8m2!3d-31.3831049!4d-64.2224556!16s%2Fg%2F1tmbx658?entry=ttu&g_ep=EgoyMDI1MDQxNi4xIKXMDSoASAFQAw%3D%3D"; // Córdoba, Argentina
-            window.open(url, "_blank");
-        }
-        const audio = document.getElementById('miCancion');
-        const textoPlay = document.getElementById('textoPlay');
-        const iconoPlay = document.getElementById('iconoPlay');
-
-        function togglePlay() {
-            if (audio.paused) {
-            audio.play();
-            textoPlay.textContent = "PAUSA";
-            iconoPlay.src = "img/btn-pausa.png"; 
-            } else {
-            audio.pause();
-            textoPlay.textContent = "PLAY";
-            iconoPlay.src = "img/btn-play.png";
-            }
-        }
-    </script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
