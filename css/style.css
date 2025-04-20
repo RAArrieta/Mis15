@@ -124,12 +124,12 @@
   cursor: pointer; 
   color:  rgb(146, 72, 19); 
   font-weight: bold;
-  background: rgb(240, 161, 105); 
+
   padding: 10px 20px; 
   border-radius: 8px; 
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .play {
   width: 40px;
