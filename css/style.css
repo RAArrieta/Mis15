@@ -211,6 +211,15 @@ button {
 button:hover {
   background-color:rgb(241, 147, 80);
 }
+.boton-limpio {
+  outline: none; /* Saca el borde que aparece al hacer focus */
+  box-shadow: none; /* Saca el resplandor azul/celeste */
+}
+.boton-limpio:focus,
+.boton-limpio:active {
+  outline: none;
+  box-shadow: none;
+}
 
 /* FOTOS */
 .imagenes {
